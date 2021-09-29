@@ -75,3 +75,25 @@ body {
     color: #0e153a;
     font-size: 12px;
 }
+
+.submit-button{
+    background-color: #455cd5;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    width: 100%;
+    text-shadow: 0 0 21px rgba(223, 206, 228, 0.5), 0 -1px 0 #311d47;
+    border-radius: 5px; /* Уголки */
+
+}
+
+.submit-button:hover{
+    background-color: #182372;
+    transition: color 200ms linear, text-shadow 500ms linear;
+    color: #fff;
+    text-shadow: 0 0 21px rgba(223, 206, 228, 0.5), 0 0 10px rgba(223, 206, 228, 0.4), 0 0 2px #1d296c;
+}
