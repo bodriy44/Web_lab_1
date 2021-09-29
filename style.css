@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:600&display=swap');
+html{
+    height: 100%;
+}
+
+body {
+    margin:0;
+    padding:0;
+    font-family:sans-serif;
+    background: #fff;
+}
+
+.login-box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 400px;
+    padding: 40px;
+    transform: translate(-50%, -50%);
+    background: #ef9058;
+    box-sizing: border-box;
+    border-radius: 10px;
+    border: 2px solid #000;
+}
+
+/*Изображение иконки авторизации*/
+.row{
+    text-align: center;
+    margin-top: -100px;
+}
+
+.login-box img{
+    width: 120px;
+    height: 120px;
+}
+
+.login-box h2{
+    margin: 0 0 30px;
+    padding: 0;
+    color: #455cd5;
+    text-align:center;
+}
+
+.login-box .user-box{
+    position: relative;
+}
+
+.login-box .user-box input{
+    width: 100%;
+    padding: 10px 0;
+    font-size: 18px;
+    color: #000;
+    margin-bottom: 30px;
+    border: none;
+    border-bottom: 1px solid #fff;
+    outline: none;
+    background: transparent;
+}
+
+.login-box .user-box label{
+    position: absolute;
+    top:0;
+    left:0;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #fff;
+    pointer-events: none;
+
+}
+
+.login-box .user-box input:focus ~ label,
+.login-box .user-box input:valid ~ label{
+    top: -20px;
+    left: 0;
+    color: #0e153a;
+    font-size: 12px;
+}
