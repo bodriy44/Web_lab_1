@@ -3,7 +3,7 @@ html{
 }
 
 .footer {
-    position: fixed;
+    position: relative;
     bottom: 0;
     left: 0;
     width: 100%;
@@ -71,6 +71,81 @@ header nav {
 }
 
 header nav a {
+
     display: inline-block;
     padding-left: 20px;
+}
+
+
+.container {
+    max-width: 1130px;
+    margin: 0 auto;
+
+}
+
+.products {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.products .product-item {
+    width: calc(25% - 40px);
+    padding: 25px 20px;
+    margin-bottom: 25px;
+}
+
+.products .product-item:hover {
+    box-shadow: 0 0 10px rgba(200, 200, 200, 0.7);
+    transform: scale(1.05);
+}
+
+.products .product-item img {
+    width: 100%;
+    height: 100%;
+
+}
+
+.products .product-item .price {
+    background-color: #000000;
+    color: #fff;
+    padding: 5px;
+
+}
+
+.products .product-item p {
+    position: relative;
+    margin: 5px;
+    font-size: 1em;
+    line-height: 1.4em;
+    height: 5.6em;
+    overflow: hidden;
+}
+
+/*Градиент на обрыве описания*/
+.products .product-item p:after {
+    content: '';
+    display: inline-block;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 4.2em;
+    height: 1.6em;
+    background: linear-gradient(to left top, #fff, rgba(255, 255, 255, 0));
+}
+
+.products .product-item a .title{
+    color: black;
+
+}
+
+
+.products .product-item a .author{
+    color: darkgrey;
+    padding-top: 5px;
+}
+
+.products .product-item a{
+    text-decoration: none;
+
 }
