@@ -293,3 +293,33 @@ input[type="search"] {
             180deg
             ,black 0,grey);
 }
+
+@media (max-width: 600px) {
+    .product-description{
+        margin: 0;
+        padding: 0;
+        display: block;
+    }
+
+    .product-about{
+        margin: 0;
+        padding: 0;
+        display: block;
+    }
+
+    .product-image{
+        display: block;
+        margin: 0;
+        padding: 0;
+    }
+
+    .product-image img{
+        margin: 0;
+        padding: 0;
+    }
+
+    .info{
+        display: block;
+    }
+
+}
